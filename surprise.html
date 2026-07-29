@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surprise ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="letters.html">Letters</a>
+    <a href="memories.html">Memories</a>
+    <a href="countdown.html">Countdown</a>
+    <a href="surprise.html">Surprise</a>
+</nav>
+
+<section class="surprise-page">
+
+    <h1>🎁 A Special Surprise 🎁</h1>
+
+    <button id="surpriseBtn">Click Me ❤️</button>
+
+    <div id="message" style="display:none;">
+        <h2>I Love You Forever ❤️</h2>
+        <p>
+            You are my greatest blessing.
+            Thank you for making every day beautiful.
+            No matter what happens, you will always have my heart.
+            Forever and always. ❤️
+        </p>
+    </div>
+
+</section>
+
+<script>
+document.getElementById("surpriseBtn").onclick = function(){
+    document.getElementById("message").style.display = "block";
+    this.style.display = "none";
+};
+</script>
+<div class="hearts">
+    <span>❤️</span>
+    <span>❤️</span>
+    <span>❤️</span>
+    <span>❤️</span>
+    <span>❤️</span>
+    <span>❤️</span>
+</div>
+</body>
+</html>

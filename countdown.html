@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="letters.html">Letters</a>
+    <a href="memories.html">Memories</a>
+    <a href="countdown.html">Countdown</a>
+    <a href="surprise.html">Surprise</a>
+</nav>
+
+<section class="countdown-page">
+    <h1>⏳ Our Special Countdown</h1>
+
+    <div id="countdown">
+        <div class="time-box">
+            <h2 id="days">00</h2>
+            <span>Days</span>
+        </div>
+
+        <div class="time-box">
+            <h2 id="hours">00</h2>
+            <span>Hours</span>
+        </div>
+
+        <div class="time-box">
+            <h2 id="minutes">00</h2>
+            <span>Minutes</span>
+        </div>
+
+        <div class="time-box">
+            <h2 id="seconds">00</h2>
+            <span>Seconds</span>
+        </div>
+    </div>
+</section>
+
+<script>
+const targetDate = new Date("October 1, 2026 00:00:00").getTime();
+
+setInterval(function(){
+
+const now = new Date().getTime();
+const distance = targetDate - now;
+
+const days = Math.floor(distance / (1000*60*60*24));
+const hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+const minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
+const seconds = Math.floor((distance % (1000*60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+</script>
+div class="hearts">
+    <span>❤️</span>
+    <span>❤️</span>
+    <span>❤️</span>
+    <span>❤️</span>
+    <span>❤️</span>
+    <span>❤️</span>
+</div>
+</body>
+</html>
